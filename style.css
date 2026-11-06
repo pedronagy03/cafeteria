@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #15100D;
+    color: #F3E9DD;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h1{
+        padding: 20px;
+        span{
+            color:#E0894A; 
+        }
+    }
+}
+
+nav a{
+    text-decoration: none;
+    color: #A89888;
+    margin: 30px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover{
+    color: #F3E9DD;
+}
+
+.btn-a{
+    background-color:#F3E9DD;
+    text-decoration: none;
+    color:#15100D;
+    padding: 13px;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn-a:hover{
+    transform: scale(1.1);
+}
+
+.secao-inicial{
+    background-image: url(/assets/imagem-cafeteria.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-left: 200px;
+    padding-top: 80px;
+    font-size: 30px;
+    color: #F3E9DD;
+    h1{
+        max-width: 600px;
+    }
+    p{
+        max-width: 600px;
+        font-size: 20px;
+    }
+}
+
+.secao-inicial{
+    height: 1100px;
+    
+}
+
+.class-btn-main{
+    display: flex;
+    flex-direction: row;
+
+    .btn-pedido{
+        text-decoration: none;
+        color:#2A1D16; 
+        background-color: #E8B04A;
+        padding: 10px;
+        margin: 15px;
+        font-size: 20px;
+        border-radius: 30px;
+        transition: all 0.2s ease;
+    }
+    
+    .btn-pedido:hover{
+        transform: scale(1.1);
+
+    }
+
+    .btn-meeting{
+        text-decoration: none;
+        color: #F7EFE4; 
+        background-color: transparent;
+        border: 1px solid #F7EFE4;
+        padding: 10px;
+        margin: 15px;
+        font-size: 20px;
+        border-radius: 30px;
+        transition: all 0.2s ease;
+    }
+
+    .btn-meeting:hover{
+        border: 1px solid gray;
+        transform: scale(1.1);
+    }
+}
+
+#cardapio{
+    background-color: #2A1D16;
+    color: #F3E9DD;
+    text-align: center;
+    padding: 50px;
+  
+    p{
+        color: #A89888;
+    }
+    
+    #h3-cardapio{
+        font-size: 35px;
+    }
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+#cardapio a {
+    text-decoration: none ;
+    color: #F3E9DD;
+}
+
+.espresso{
+    width: 250px;
+    background-color:#15100D;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+   
+    h3{
+        transition: color 0.2s ease;
+
+    }
+
+    h3:hover{
+        color:#E0894A;
+    }
+
+    .add-espresso{
+        background-color: #E8B04A;
+        padding: 13px;
+        border-radius: 20px;
+        color: #FFFF;
+        display: inline-block;
+        transition: transform 0.2s ease;
+    }
+
+    .add-espresso:hover{
+        transform: scale(1.1);
+    }
+}
+
+.cappuccino{
+    width: 250px;
+    background-color:#15100D;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+     h3{
+        transition: color 0.2s ease;
+    }
+
+    h3:hover{
+        color:#E0894A;
+    }
+}
+
+.add-cappuccino{
+    background-color: #E8B04A;
+    padding: 13px;
+    border-radius: 20px;
+    color: #FFFF;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.add-cappuccino:hover{
+    transform: scale(1.1);
+}
+
+.cafe-leite{
+    width: 250px;
+    background-color:#15100D;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+     h3{
+        transition: color 0.2s ease;
+    }
+
+    h3:hover{
+        color:#E0894A;
+    }
+}
+
+.add-cafeComLeite{
+    background-color: #E8B04A;
+    padding: 13px;
+    border-radius: 20px;
+    color: #FFFF;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.add-cafeComLeite:hover{
+    transform: scale(1.1);
+}
+
+.pao-de-queijo{
+    width: 250px;
+    background-color:#15100D;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+      h3{
+        transition: color 0.2s ease;
+    }
+
+    h3:hover{
+        color:#E0894A;
+    }
+}
+
+.add-paoQueijo{
+    background-color: #E8B04A;
+    padding: 13px;
+    border-radius: 20px;
+    color: #FFFF;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.add-paoQueijo:hover{
+    transform: scale(1.1);
+}
+
+.bolo-cenoura{
+    width: 250px;
+    background-color:#15100D;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+      h3{
+        transition: color 0.2s ease;
+    }
+
+    h3:hover{
+        color:#E0894A;
+    }
+}
+
+.add-boloCenoura{
+    background-color: #E8B04A;
+    padding: 13px;
+    border-radius: 20px;
+    color: #FFFF;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.add-boloCenoura:hover{
+    transform: scale(1.1);
+}
+
+.brownie{
+      width: 250px;
+    background-color:#15100D;
+    height: 300px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+      h3{
+        transition: color 0.2s ease;
+    }
+
+    h3:hover{
+        color:#E0894A;
+    }
+}
+
+.add-brownie{
+    background-color: #E8B04A;
+    padding: 13px;
+    border-radius: 20px;
+    color: #FFFF;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.add-brownie:hover{
+    transform: scale(1.1);
+}
+
+#porque{
+    background-color:#15100D;
+    padding: 70px;
+    color:#F3E9DD;
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.container1{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quadrado1{
+    background-color:#E8B04A;
+    width: 30px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+.container2{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quadrado2{
+    background-color:#E8B04A;
+    width: 30px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+.container3{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.quadrado3{
+    background-color:#E8B04A;
+    width: 30px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+#contato{
+    background-color:#A89888;
+    color: #15100D;
+    text-align: center;
+}
+
+.container-contato{
+    padding: 30px;
+}
